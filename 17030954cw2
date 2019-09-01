@@ -1,0 +1,678 @@
+rajat@L10W-B:~/CW2 2feb/scripts$ cat 17030954cw2 
+Script started on Sat 02 Feb 2019 07:41:45 PM +0545
+rajat@L10W-B:~$ 
+rajat@L10W-B:~$ PS1='$PWD> '
+
+/home/rajat> #1
+/home/rajat> mkdir -p WorldCup/{Argentina,France,Germany,Brazil,Japan}
+/home/rajat> ls -R WorldCup/
+WorldCup/:
+Argentina  Brazil  France  Germany  Japan
+
+WorldCup/Argentina:
+
+WorldCup/Brazil:
+
+WorldCup/France:
+
+WorldCup/Germany:
+
+WorldCup/Japan:
+
+/home/rajat> #2
+/home/rajat> cd WorldCup/Argentina
+/home/rajat/WorldCup/Argentina> pwd
+/home/rajat/WorldCup/Argentina
+/home/rajat/WorldCup/Argentina> cal>file1
+/home/rajat/WorldCup/Argentina> touch file3 file2
+/home/rajat/WorldCup/Argentina> #3
+
+/home/rajat/WorldCup/Argentina> cd ..
+/home/rajat/WorldCup> rm Argentina/file1 Argentina/file2
+/home/rajat/WorldCup> rm -i Argentina/file3
+rm: remove regular empty file 'Argentina/file3'? y
+/home/rajat/WorldCup> ls -a Argentina/
+.  ..
+/home/rajat/WorldCup> rmdir Argentina
+/home/rajat/WorldCup> ls -aR
+.:
+.  ..  Brazil  France  Germany  Japan
+
+./Brazil:
+.  ..
+
+./France:
+.  ..
+
+./Germany:
+.  ..
+
+./Japan:
+.  ..
+
+/home/rajat/WorldCup> #4
+/home/rajat/WorldCup> echo -e "Hello! I am proud to be part of Islingtonians.\n14 < (2 
++2)"
+Hello! I am proud to be part of Islingtonians.
+14 < (2+2)
+/home/rajat/WorldCup> pwd
+/home/rajat/WorldCup
+/home/rajat/WorldCup> cd; pwd
+/home/rajat
+/home/rajat> cd WorldCup/Japan/
+/home/rajat/WorldCup/Japan> pwd
+/home/rajat/WorldCup/Japan
+
+/home/rajat/WorldCup/Japan> #5
+/home/rajat/WorldCup/Japan> pwd; cd; pwd
+/home/rajat/WorldCup/Japan
+/home/rajat
+/home/rajat> echo -e "this command will first display the current directory \nand then 
+ go to the home directory"
+this command will first display the current directory 
+and then go to the home directory
+
+/home/rajat> #6
+/home/rajat> cd WorldCup/Japan
+/home/rajat/WorldCup/Japan> pwd; cd ..; pwd; cd ..; pwd
+/home/rajat/WorldCup/Japan
+/home/rajat/WorldCup
+/home/rajat
+/home/rajat> echo -e "this command will first show the path to the current directory,\ 
+nthen change to the previous directory, again show the current directory,\nchange the d 
+irectory and finally shows the current working directory"
+this command will first show the path to the current directory,
+then change to the previous directory, again show the current directory,
+change the directory and finally shows the current working directory
+
+/home/rajat> #7
+/home/rajat> cd; pwd
+/home/rajat
+/home/rajat> echo -e "this command will go to the home directory"
+this command will go to the home directory
+/home/rajat> ls
+17030954cw2  Downloads          Music      Pictures  Templates
+Desktop      hide-wingpanel     nano.save  Public    Videos
+Documents    libinput-gestures  NOS        sda       WorldCup
+/home/rajat> echo -e "this command will list all of the contents in the current direct 
+ory"
+this command will list all of the contents in the current directory
+/home/rajat> ls -a
+.              .dmrc              .local        .sudo_as_admin_successful
+..             Documents          .minimise.ds  Templates
+17030954cw2    Downloads          .mozilla      .themes
+.bash_history  .fonts             Music         .ViberPC
+.bash_logout   .gconf             .nano         Videos
+.bashrc        .gnome             nano.save     .wine
+.bashrc.save   .gnome2            NOS           WorldCup
+.cache         hide-wingpanel     Pictures      .Xauthority
+.config        .ICEauthority      .pki          .xsession-errors
+.conky         .kde               .profile      .xsession-errors.old
+.dbus          .kingsoft          Public
+Desktop        libinput-gestures  sda
+/home/rajat> echo -e "this command will list all the contents in the directory includi 
+ng the hidden items"
+this command will list all the contents in the directory including the hidden items
+/home/rajat> ls -al
+total 232
+drwxr-xr-x 32 rajat rajat  4096 Feb  2 19:42 .
+drwxr-xr-x  3 root   root    4096 Aug 17 11:40 ..
+-rw-rw-r--  1 rajat rajat  4096 Feb  2 19:44 17030954cw2
+-rw-------  1 rajat rajat 34013 Feb  2 19:41 .bash_history
+-rw-r--r--  1 rajat rajat   220 Aug  2  2018 .bash_logout
+-rw-r--r--  1 rajat rajat  5696 Feb  2 19:30 .bashrc
+-rw-r--r--  1 rajat rajat  5729 Feb  2 14:35 .bashrc.save
+drwx------ 25 rajat rajat  4096 Feb  2 13:21 .cache
+drwxr-xr-x 26 rajat rajat  4096 Feb  2 16:31 .config
+drwxr-xr-x  8 rajat rajat  4096 Feb  1 21:27 .conky
+drwx------  3 rajat rajat  4096 Aug  2  2018 .dbus
+drwxr-xr-x  3 rajat rajat  4096 Aug  4 17:29 Desktop
+-rw-r--r--  1 rajat rajat    27 Aug  2  2018 .dmrc
+drwxr-xr-x  5 rajat rajat  4096 Jan 13 08:39 Documents
+drwxr-xr-x  5 rajat rajat  4096 Feb  2 13:11 Downloads
+drwxrwxr-x  2 rajat rajat  4096 Aug  5 10:01 .fonts
+drwx------  2 rajat rajat  4096 Feb  1 20:57 .gconf
+drwx------  3 rajat rajat  4096 Aug  3  2018 .gnome
+drwx------  2 rajat rajat  4096 Aug  2  2018 .gnome2
+drwxrwxr-x  3 rajat rajat  4096 Aug  3  2018 hide-wingpanel
+-rw-------  1 rajat rajat 15212 Feb  2 13:48 .ICEauthority
+drwx------  3 rajat rajat  4096 Aug  3  2018 .kde
+drwxrwxr-x  3 rajat rajat  4096 Aug  4 12:22 .kingsoft
+drwxrwxr-x  4 rajat rajat  4096 Aug  3  2018 libinput-gestures
+drwx------  3 rajat rajat  4096 Aug  2  2018 .local
+-rw-rw-r--  1 rajat rajat    25 Aug  3  2018 .minimise.ds
+drwx------  5 rajat rajat  4096 Aug  2  2018 .mozilla
+drwxr-xr-x  2 rajat rajat  4096 Aug  2  2018 Music
+drwxrwxr-x  2 rajat rajat  4096 Aug  3  2018 .nano
+-rw-------  1 rajat rajat     1 Feb  2 12:59 nano.save
+drwxrwxr-x  4 rajat rajat  4096 Feb  2 10:08 NOS
+drwxr-xr-x  5 rajat rajat  4096 Feb  2 16:04 Pictures
+drwx------  3 rajat rajat  4096 Aug  2  2018 .pki
+-rw-r--r--  1 rajat rajat   655 Aug  2  2018 .profile
+drwxr-xr-x  2 rajat rajat  4096 Aug  2  2018 Public
+drwxrwxr-x  3 rajat rajat  4096 Feb  2 19:32 sda
+-rw-r--r--  1 rajat rajat     0 Aug  2  2018 .sudo_as_admin_successful
+drwxr-xr-x  2 rajat rajat  4096 Aug  2  2018 Templates
+drwxrwxr-x  5 rajat rajat  4096 Aug  3  2018 .themes
+drwxrwxr-x  5 rajat rajat  4096 Jan  9 13:20 .ViberPC
+drwxr-xr-x  2 rajat rajat  4096 Aug  2  2018 Videos
+drwxrwxr-x  4 rajat rajat  4096 Aug  3  2018 .wine
+drwxrwxr-x  6 rajat rajat  4096 Feb  2 19:42 WorldCup
+-rw-------  1 rajat rajat    51 Feb  2 13:48 .Xauthority
+-rw-------  1 rajat rajat    82 Feb  2 13:48 .xsession-errors
+-rw-------  1 rajat rajat    82 Feb  2 13:29 .xsession-errors.old
+/home/rajat> echo -e "this command will list all the contents in the directory includi 
+ng the hidden items in list view"
+this command will list all the contents in the directory including the hidden items in list view
+
+/home/rajat> #8
+/home/rajat> cd; pwd; cd cw2; pwd
+/home/rajat
+bash: cd: cw2: No such file or directory
+/home/rajat
+/home/rajat> echo -e "this command will go to the home directory and tries to \nopen a 
+ non-existing directory and then prints the current location"
+this command will go to the home directory and tries to 
+open a non-existing directory and then prints the current location
+/home/rajat> ls -R WorldCup
+WorldCup:
+Brazil  France  Germany  Japan
+
+WorldCup/Brazil:
+
+WorldCup/France:
+
+WorldCup/Germany:
+
+WorldCup/Japan:
+/home/rajat> echo -e "this command will recursively display all the contents of the di 
+rectory and subdirectories."
+this command will recursively display all the contents of the directory and subdirectories.
+
+/home/rajat> #9
+/home/rajat> cd WorldCup/France
+/home/rajat/WorldCup/France> cat>testX
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+^Z
+[1]+  Stopped                 cat > testX
+/home/rajat/WorldCup/France> cat testX>testY
+/home/rajat/WorldCup/France> cat testX>testZ
+
+/home/rajat/WorldCup/France> #10
+/home/rajat/WorldCup/France> cat testX
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+/home/rajat/WorldCup/France> cat testY
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+/home/rajat/WorldCup/France> cat testZ
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+
+/home/rajat/WorldCup/France> #11
+/home/rajat/WorldCup/France> cp testX  ../Brazil
+/home/rajat/WorldCup/France> cp testY  ../Brazil
+/home/rajat/WorldCup/France> cp testZ  ../Brazil
+
+/home/rajat/WorldCup/France> #12
+/home/rajat/WorldCup/France> cat testX testY testZ
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+/home/rajat/WorldCup/France> cat testX testY testZ > testResult  # to create
+/home/rajat/WorldCup/France> cat testX - testY >> testResult test  # to append
+hi
+hello
+bye
+^Z
+[2]+  Stopped                 cat testX - testY test >> testResult
+/home/rajat/WorldCup/France> cat testResult
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+hi
+hello
+bye
+
+/home/rajat/WorldCup/France> #13
+/home/rajat/WorldCup/France> cat test[XYZ]
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+/home/rajat/WorldCup/France> echo -e "displays the contents of the testX, testY, testZ 
+ files"
+displays the contents of the testX, testY, testZ files
+
+/home/rajat/WorldCup/France> #14
+/home/rajat/WorldCup/France> ls -l 
+total 16
+-rw-rw-r-- 1 rajat rajat 309 Feb  2 19:46 testResult
+-rw-rw-r-- 1 rajat rajat  74 Feb  2 19:45 testX
+-rw-rw-r-- 1 rajat rajat  74 Feb  2 19:45 testY
+-rw-rw-r-- 1 rajat rajat  74 Feb  2 19:45 testZ
+/home/rajat/WorldCup/France> chmod 000 testX
+/home/rajat/WorldCup/France> ls -l testX
+---------- 1 rajat rajat 74 Feb  2 19:45 testX
+/home/rajat/WorldCup/France> cat testX
+cat: testX: Permission denied
+/home/rajat/WorldCup/France> cat>>testX
+bash: testX: Permission denied
+/home/rajat/WorldCup/France> chmod 600 testX
+/home/rajat/WorldCup/France> ls -l testX
+-rw------- 1 rajat rajat 74 Feb  2 19:45 testX
+/home/rajat/WorldCup/France> cat testX
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+/home/rajat/WorldCup/France> cat>>testX
+written
+^Z
+[3]+  Stopped                 cat >> testX
+
+/home/rajat/WorldCup/France> #15
+/home/rajat/WorldCup/France> cd ..
+/home/rajat/WorldCup> ls -ld France
+drwxrwxr-x 2 rajat rajat 4096 Feb  2 19:45 France
+/home/rajat/WorldCup> chmod 000 France
+/home/rajat/WorldCup> ls -ld France
+d--------- 2 rajat rajat 4096 Feb  2 19:45 France
+/home/rajat/WorldCup> cat France/testX
+cat: France/testX: Permission denied
+/home/rajat/WorldCup> touch France/newFile
+touch: cannot touch 'France/newFile': Permission denied
+/home/rajat/WorldCup> ls -a France
+ls: cannot open directory 'France': Permission denied
+/home/rajat/WorldCup> chmod 700 France
+/home/rajat/WorldCup> ls -ld France
+drwx------ 2 rajat rajat 4096 Feb  2 19:45 France
+/home/rajat/WorldCup> cat France/testX
+aaabb Aaaaa
+AAAAA
+bbbcc Bbbbb
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+written
+/home/rajat/WorldCup> touch France/newFile
+/home/rajat/WorldCup> ls -a France
+.  ..  newFile  testResult  testX  testY  testZ
+
+/home/rajat/WorldCup> #16
+/home/rajat/WorldCup> cd Brazil
+/home/rajat/WorldCup/Brazil> grep bb testX
+aaabb Aaaaa
+bbbcc Bbbbb
+/home/rajat/WorldCup/Brazil> echo -e "to search all the lines with 'bb' in testX file"                                                                                    "
+to search all the lines with 'bb' in testX file
+/home/rajat/WorldCup/Brazil> grep -v bb testX
+AAAAA
+BBBBB
+ff–ff Ccccc
+CCCCC
+cccdd Ddddd
+DDDDD
+/home/rajat/WorldCup/Brazil> echo -e "to search all the lines without 'bb' in testX fi 
+le"
+to search all the lines without 'bb' in testX file
+/home/rajat/WorldCup/Brazil> grep -n bb testX
+1:aaabb Aaaaa
+3:bbbcc Bbbbb
+/home/rajat/WorldCup/Brazil> echo -e "to search all the no of lines and lines with 'bb 
+' in testX file"
+to search all the no of lines and lines with 'bb' in testX file
+/home/rajat/WorldCup/Brazil> grep -l bb *
+testX
+testY
+testZ
+/home/rajat/WorldCup/Brazil> echo -e "to search all the files which contains 'bb'"
+to search all the files which contains 'bb'
+/home/rajat/WorldCup/Brazil> grep -i bb *
+testX:aaabb Aaaaa
+testX:bbbcc Bbbbb
+testX:BBBBB
+testY:aaabb Aaaaa
+testY:bbbcc Bbbbb
+testY:BBBBB
+testZ:aaabb Aaaaa
+testZ:bbbcc Bbbbb
+testZ:BBBBB
+/home/rajat/WorldCup/Brazil> echo -e "to search all the files which contains 'bb' or ' 
+BB' ignoring the case"
+to search all the files which contains 'bb' or 'BB' ignoring the case
+/home/rajat/WorldCup/Brazil> grep -i BB *
+testX:aaabb Aaaaa
+testX:bbbcc Bbbbb
+testX:BBBBB
+testY:aaabb Aaaaa
+testY:bbbcc Bbbbb
+testY:BBBBB
+testZ:aaabb Aaaaa
+testZ:bbbcc Bbbbb
+testZ:BBBBB
+/home/rajat/WorldCup/Brazil> echo -e "to search all the files which contains 'bb' or ' 
+BB' ignoring the case"
+to search all the files which contains 'bb' or 'BB' ignoring the case
+/home/rajat/WorldCup/Brazil> grep -c bb *
+testX:2
+testY:2
+testZ:2
+/home/rajat/WorldCup/Brazil> echo -e "to list the files and the count of occurance of  
+'bb' in them"
+to list the files and the count of occurance of 'bb' in them
+/home/rajat/WorldCup/Brazil> grep '^A' *
+testX:AAAAA
+testY:AAAAA
+testZ:AAAAA
+/home/rajat/WorldCup/Brazil> echo -e "to list the files and the lines which start with 
+ 'A' in them"
+to list the files and the lines which start with 'A' in them
+/home/rajat/WorldCup/Brazil> grep -n '^' testX
+1:aaabb Aaaaa
+2:AAAAA
+3:bbbcc Bbbbb
+4:BBBBB
+5:ff–ff Ccccc
+6:CCCCC
+7:cccdd Ddddd
+8:DDDDD
+/home/rajat/WorldCup/Brazil> echo -e "to list all the lines with number of the file te 
+stX"
+to list all the lines with number of the file testX
+
+/home/rajat/WorldCup/Brazil> #17
+/home/rajat/WorldCup/Brazil> alias lsR='ls -R'
+/home/rajat/WorldCup/Brazil> alias lsl='ls -l'
+/home/rajat/WorldCup/Brazil> alias
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias lsR='ls -R'
+alias lsal='ls -al'
+alias lsl='ls -l'
+/home/rajat/WorldCup/Brazil> cd; pwd;
+/home/rajat
+/home/rajat> lsl
+total 72
+-rw-rw-r-- 1 rajat rajat 16384 Feb  2 19:48 17030954cw2
+drwxr-xr-x 3 rajat rajat  4096 Aug  4 17:29 Desktop
+drwxr-xr-x 5 rajat rajat  4096 Jan 13 08:39 Documents
+drwxr-xr-x 5 rajat rajat  4096 Feb  2 13:11 Downloads
+drwxrwxr-x 3 rajat rajat  4096 Aug  3  2018 hide-wingpanel
+drwxrwxr-x 4 rajat rajat  4096 Aug  3  2018 libinput-gestures
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Music
+-rw------- 1 rajat rajat     1 Feb  2 12:59 nano.save
+drwxrwxr-x 4 rajat rajat  4096 Feb  2 10:08 NOS
+drwxr-xr-x 5 rajat rajat  4096 Feb  2 16:04 Pictures
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Public
+drwxrwxr-x 3 rajat rajat  4096 Feb  2 19:32 sda
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Templates
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Videos
+drwxrwxr-x 6 rajat rajat  4096 Feb  2 19:42 WorldCup
+
+/home/rajat> lsR WorldCup # home directory too large for recursive listing
+WorldCup:
+Brazil  France  Germany  Japan
+
+WorldCup/Brazil:
+testX  testY  testZ
+
+WorldCup/France:
+newFile  testResult  testX  testY  testZ
+
+WorldCup/Germany:
+
+WorldCup/Japan:
+
+/home/rajat> #18
+/home/rajat> unalias lsR
+/home/rajat> unalias lsl
+/home/rajat> alias
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias lsal='ls -al'
+
+/home/rajat> #19
+/home/rajat> echo "alias lsR='ls -R'" >> ~/.bashrc
+/home/rajat> echo "alias lsl='ls -l'" >> ~/.bashrc
+/home/rajat> finger # current login details
+Login     Name         Tty      Idle  Login Time   Office     Office Phone
+rajat    raj maleku   tty7     6:03  Feb  2 13:48 (:0)
+/home/rajat> exit
+There are stopped jobs.
+/home/rajat> exit
+
+Script done on Sat 02 Feb 2019 07:52:16 PM +0545
+
+
+Script started on Sat 02 Feb 2019 08:04:01 PM +0545
+rajat@L10W-B:~$ PS1='$PWD> '
+/home/rajat> finger # new session
+Login     Name         Tty      Idle  Login Time   Office     Office Phone
+rajat    raj maleku   tty7        7  Feb  2 19:56 (:0)
+/home/rajat> lsl
+total 80
+-rw-rw-r-- 1 rajat rajat  3466 Feb  2 20:02 17030954
+-rw-rw-r-- 1 rajat rajat 20312 Feb  2 19:52 17030954cw2
+drwxr-xr-x 3 rajat rajat  4096 Aug  4 17:29 Desktop
+drwxr-xr-x 5 rajat rajat  4096 Jan 13 08:39 Documents
+drwxr-xr-x 5 rajat rajat  4096 Feb  2 13:11 Downloads
+drwxrwxr-x 3 rajat rajat  4096 Aug  3  2018 hide-wingpanel
+drwxrwxr-x 4 rajat rajat  4096 Aug  3  2018 libinput-gestures
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Music
+-rw------- 1 rajat rajat     1 Feb  2 12:59 nano.save
+drwxrwxr-x 4 rajat rajat  4096 Feb  2 10:08 NOS
+drwxr-xr-x 5 rajat rajat  4096 Feb  2 16:04 Pictures
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Public
+drwxrwxr-x 3 rajat rajat  4096 Feb  2 19:32 sda
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Templates
+drwxr-xr-x 2 rajat rajat  4096 Aug  2  2018 Videos
+drwxrwxr-x 6 rajat rajat  4096 Feb  2 19:42 WorldCup
+/home/rajat> lsR WorldCup # home directory too large for recursive listing
+WorldCup:
+Brazil  France  Germany  Japan
+
+WorldCup/Brazil:
+testX  testY  testZ
+
+WorldCup/France:
+newFile  testResult  testX  testY  testZ
+
+WorldCup/Germany:
+
+WorldCup/Japan:
+
+/home/rajat> #20
+/home/rajat> echo "alias noAllf='ls -a | wc -l'" >> ~/.bashrc
+
+/home/rajat> #21
+/home/rajat> echo "alias noAsubsir='ls -aR | wc -l'" >> ~/.bashrc
+
+/home/rajat> #22
+/home/rajat> echo "alias noAcs='cd; pwd; ls -aR | grep ^[gtw] | wc -l'" >> ~/.bashrc
+/home/rajat> source ~/.bashrc
+rajat@L10W-B:~$ PS1='$PWD> '
+/home/rajat> alias
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias lsR='ls -R'
+alias lsal='ls -al'
+alias lsl='ls -l'
+alias noAcs='cd; pwd; ls -aR | grep ^[gtw] | wc -l'
+alias noAllf='ls -a | wc -l'
+alias noAsubsir='ls -aR | wc -l'
+
+/home/rajat> #23
+/home/rajat> noAllf
+47
+
+/home/rajat> #24
+/home/rajat> noAsubsir
+62845
+
+/home/rajat> #25
+/home/rajat> noAcs
+/home/rajat
+6140
+
+/home/rajat> #history
+/home/rajat> history 10
+ 1858  PS1='$PWD> '
+ 1859  alias
+ 1860  #23
+ 1861  noAllf
+ 1862  #24
+ 1863  noAsubsir
+ 1864  #25
+ 1865  noAcs
+ 1866  #history
+ 1867  history 10
+/home/rajat> clear
+
+/home/rajat> #26
+/home/rajat> fc -l
+1854	 echo "alias noAsubsir='ls -aR | wc -l'" >> ~/.bashrc
+1855	 #22
+1856	 echo "alias noAcs='cd; pwd; ls -aR | grep ^[gtw] | wc -l'" >> ~/.bashrc
+1857	 source ~/.bashrc
+1858	 PS1='$PWD> '
+1859	 alias
+1860	 #23
+1861	 noAllf
+1862	 #24
+1863	 noAsubsir
+1864	 #25
+1865	 noAcs
+1866	 #history
+1867	 history 10
+1868	 clear
+1869	 #26
+
+/home/rajat> #27
+/home/rajat> !-7
+noAcs
+/home/rajat
+6140
+
+/home/rajat> #28
+/home/rajat> fc -e - c #recent command starting with c
+clear
+/home/rajat> exit
+
+Script done on Sat 02 Feb 2019 08:05:44 PM +0545
